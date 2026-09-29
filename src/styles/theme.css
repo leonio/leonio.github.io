@@ -1,0 +1,41 @@
+/* Register design tokens for Tailwind v4 */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --font-app: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+/*
+ * "Paper & Ink" palette: warm paper with near-black ink in light mode,
+ * warm charcoal in dark mode, one rust/terracotta accent across both.
+ * All text/background pairs meet WCAG AA (>= 4.5:1).
+ */
+
+/* Light theme values */
+:root,
+[data-theme="light"] {
+  --background: #faf8f5;
+  --foreground: #1f1e1c;
+  --accent: #b4451f;
+  --accent-foreground: #ffffff;
+  --muted: #ece7df;
+  --muted-foreground: #66625b;
+  --border: #e7e2da;
+}
+
+/* Dark theme values */
+[data-theme="dark"] {
+  --background: #1a1917;
+  --foreground: #ebe7e0;
+  --accent: #e8835a;
+  --accent-foreground: #1a1917;
+  --muted: #2a2825;
+  --muted-foreground: #a19b91;
+  --border: #34312d;
+}
