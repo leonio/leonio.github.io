@@ -6,6 +6,7 @@ dist/
 
 # dependencies
 node_modules/
+.husky/_/
 
 # logs
 npm-debug.log*
