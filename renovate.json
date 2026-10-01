@@ -6,6 +6,12 @@
     ":dependencyDashboard",
     "helpers:pinGitHubActionDigests"
   ],
+  "commitMessagePrefix": "chore(deps): ",
+  "commitMessageAction": "update",
+  "commitMessageTopic": "{{{depName}}}",
+  "commitMessageExtra": "to {{newVersion}}",
+  "prTitle": "chore(deps): update {{{depName}}} to {{newVersion}}",
+  "semanticCommits": "enabled",
   "timezone": "Europe/London",
   "schedule": ["before 6am on monday"],
   "labels": ["dependencies"],
